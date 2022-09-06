@@ -20,7 +20,7 @@ weight_dict = {idx: 0 for idx in range(max_weight + 1)}
 
 for idx in range(stuff_number):
     # 넣을 물건의 정보 변수 선언
-    current_weight, current_value, *args = stuff_list[idx]
+    current_weight, current_value = stuff_list[idx]
     # 딕셔너리의 모든 값에 대해 조사
     # 갱신된 값이 다음 조건에 반영되지 않도록 역순 리스트에 대해서 실행
     for element in reversed(weight_dict.items()):
