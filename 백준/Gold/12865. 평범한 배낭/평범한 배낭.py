@@ -10,11 +10,7 @@ stuff_list = []
 # 각 물건의 무게와 가치 input
 for _ in range(stuff_number):
     weight, value = map(int, sys.stdin.readline().split())
-    unit_value = value / weight
-    stuff_list.append([weight, value, unit_value])
-
-# 단위 가치에 대해 우선순위 부여
-stuff_list.sort(key=lambda x:(x[0]))
+    stuff_list.append([weight, value])
 
 # 최대 value 변수 선언
 max_value = 0
