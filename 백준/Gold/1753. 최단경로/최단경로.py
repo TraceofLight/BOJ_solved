@@ -1,8 +1,7 @@
 # 최단경로
 
-from heapq import *
 import sys
-from collections import defaultdict
+from heapq import *
 
 # 노드, 라인의 갯수와 초기 노드 정보 input()
 node_number, line_number = map(int, sys.stdin.readline().split())
