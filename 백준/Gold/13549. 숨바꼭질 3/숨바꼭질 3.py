@@ -24,6 +24,7 @@ while progress_que:
         if min_time > time:
             min_time = time
     # +1, -1, *2에 대해서 방문하지 않았다면 큐에 추가
+    # *2 는 시간을 소모하지 않기 때문에 항상 우선진행 후 방문 처리한다.
     if 0 <= now_point * 2 and now_point * 2 <= 200000:
         if not is_visited[now_point * 2]:
             progress_que.append([now_point * 2, time])
