@@ -26,7 +26,7 @@ max_diameter = [0, 0]
 for start_node in graph[0]:
     progress_stack = []
     is_visited = [False for _ in range(node_number)]
-    # 모든 노드에서부터 출발해서 가장 긴 거리 측정
+    # 루트에서 출발해서 가장 긴 거리 측정
     progress_stack.append([start_node, weight_dict[(0, start_node)]])
     is_visited[0] = True
     is_visited[start_node] = True
