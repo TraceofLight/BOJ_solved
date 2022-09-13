@@ -4,7 +4,7 @@ from collections import deque, defaultdict
 
 # 테스트 케이스 10회
 testcase = 10
-# 결과 출력
+# 결과 리스트 선언
 output = []
 
 for each_case in range(testcase):
