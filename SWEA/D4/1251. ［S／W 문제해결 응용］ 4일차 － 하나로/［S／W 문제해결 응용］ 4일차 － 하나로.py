@@ -1,4 +1,4 @@
-# SWEA_5251 하나로
+# SWEA_1251 하나로
 
 from heapq import *
 
