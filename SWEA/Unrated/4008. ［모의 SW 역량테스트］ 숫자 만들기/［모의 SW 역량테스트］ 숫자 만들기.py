@@ -1,7 +1,5 @@
 # SWEA_4008 숫자 만들기
 
-from heapq import *
-
 # 테스트 횟수 및 출력 리스트 선언
 testcase = int(input())
 output = []
