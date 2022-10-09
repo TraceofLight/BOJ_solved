@@ -5,11 +5,13 @@ import sys
 input = sys.stdin.readline
 
 # 재귀 한도 상향 처리
-sys.setrecursionlimit(1000000)
+sys.setrecursionlimit(110000)
 
 
-# 자식 노드를 찾고 갯수를 카운팅하는 함수 선언
 def find_child(graph_dict: dict, parent_node: int, now_node: int, result_dict: dict) -> None:
+    '''
+    자식 노드를 찾고 갯수를 카운팅하는 함수
+    '''
 
     # 현재 노드를 포함하여 기본값 1 설정
     result_dict[now_node] = 1
@@ -25,9 +27,6 @@ def find_child(graph_dict: dict, parent_node: int, now_node: int, result_dict: d
 
             # 다음 노드들 값을 현재 노드에 합산
             result_dict[now_node] += result_dict[next_node]
-
-    # 결과 반환
-    return result_dict[now_node]
 
 
 # 노드 숫자, 루트 노드, 쿼리 갯수 입력
