@@ -5,7 +5,7 @@ import sys
 input = sys.stdin.readline
 
 
-def factorial_zero(target_number: int):
+def factorial_zero(target_number: int) -> int:
     '''
     팩토리얼 내 5의 갯수를 확인하여 0의 갯수를 카운팅하는 함수
     '''
@@ -24,7 +24,7 @@ def factorial_zero(target_number: int):
     # 카운터 반환
     return count_five
 
-def binary_search_factorial(target_number: int, start: int, end: int):
+def binary_search_factorial(target_number: int, start: int, end: int) -> int:
     '''
     이분탐색을 통해 해당 0의 갯수를 가지는 팩토리얼 최솟값을 반환하는 함수
     '''
