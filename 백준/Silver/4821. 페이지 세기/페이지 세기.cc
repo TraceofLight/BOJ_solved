@@ -26,7 +26,7 @@ int main(void)
 			break ;
 		else
 		{
-			print_info.assign(1500, false);
+			print_info.assign(1001, false);
 			cin.ignore();
 			getline(cin, temp);
 			stringstream range_stream(temp);
